@@ -12,7 +12,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
+                    <x-nav-link :href="route('menus.index')" :active="request()->routeIs('menus.index')">
                         献立1week
                     </x-nav-link>
                     
