@@ -16,9 +16,9 @@
                         献立1week
                     </x-nav-link>
                     
-                    <x-nav-link :href="route('post.create')" :active="request()->routeIs('post.create')">
+                    {{-- <x-nav-link :href="route('post.create')" :active="request()->routeIs('post.create')">
                         新規作成
-                    </x-nav-link>
+                    </x-nav-link> --}}
 
                 </div>
             </div>
