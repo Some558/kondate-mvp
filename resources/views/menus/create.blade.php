@@ -12,20 +12,20 @@
                     <form action="{{ route('menus.store') }}" method="POST">
                         @csrf
                         <div class="mb-4">
-                            <label for="main_dish" class="block text-gray-700 text-sm font-bold mb-2">Main Dish:</label>
+                            <label for="main_dish" class="block text-gray-700 text-sm font-bold mb-2">メインメニュー:</label>
                             <input type="text" name="main_dish" id="main_dish" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
                         </div>
                         <div class="mb-4">
-                            <label for="sub_dish1" class="block text-gray-700 text-sm font-bold mb-2">Side Dish 1:</label>
+                            <label for="sub_dish1" class="block text-gray-700 text-sm font-bold mb-2">サイドメニュー 1:</label>
                             <input type="text" name="sub_dish1" id="sub_dish1" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
                         </div>
                         <div class="mb-6">
-                            <label for="sub_dish2" class="block text-gray-700 text-sm font-bold mb-2">Side Dish 2:</label>
+                            <label for="sub_dish2" class="block text-gray-700 text-sm font-bold mb-2">サイドメニュー 2:</label>
                             <input type="text" name="sub_dish2" id="sub_dish2" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
                         </div>
                         <div class="flex items-center justify-between">
                             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                Create Menu
+                                献立作成！
                             </button>
                         </div>
                     </form>
