@@ -12,7 +12,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                mplus: ['"M PLUS 1p"', ...defaultTheme.fontFamily.sans],
+                zen: ['"Zen Kaku Gothic New"', ...defaultTheme.fontFamily.sans],
+                sans: ['"Zen Kaku Gothic New"','Noto Sans JP', 'Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
     },
