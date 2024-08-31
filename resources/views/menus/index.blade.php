@@ -13,17 +13,17 @@
                         <div class="mb-8">
                             <h3 class="text-lg font-semibold text-gray-700 mb-4">月曜日の献立</h3>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                <div class="bg-green-100 p-4 rounded-lg shadow">
-                                    <h4 class="font-bold text-green-800 mb-2">メインメニュー</h4>
-                                    <p class="text-green-700">{{ $menu->dishes->where('type', 'main')->first()->name }}</p>
+                                <div class="bg-lime-100 p-4 rounded-lg shadow">
+                                    <h4 class="font-bold text-gray-900 mb-2">メインメニュー</h4>
+                                    <p class="text-gray-900">{{ $menu->dishes->where('type', 'main')->first()->name }}</p>
                                 </div>
-                                <div class="bg-blue-100 p-4 rounded-lg shadow">
-                                    <h4 class="font-bold text-blue-800 mb-2">サイドメニュー 1</h4>
-                                    <p class="text-blue-700">{{ $menu->dishes->where('type', 'sub1')->first()->name }}</p>
+                                <div class="bg-lime-100 p-4 rounded-lg shadow">
+                                    <h4 class="font-bold text-gray-900 mb-2">サイドメニュー 1</h4>
+                                    <p class="text-gray-900">{{ $menu->dishes->where('type', 'sub1')->first()->name }}</p>
                                 </div>
-                                <div class="bg-purple-100 p-4 rounded-lg shadow">
-                                    <h4 class="font-bold text-purple-800 mb-2">サイドメニュー 2</h4>
-                                    <p class="text-purple-700">{{ $menu->dishes->where('type', 'sub2')->first()->name }}</p>
+                                <div class="bg-lime-100 p-4 rounded-lg shadow">
+                                    <h4 class="font-bold text-gray-900 mb-2">サイドメニュー 2</h4>
+                                    <p class="text-gray-900">{{ $menu->dishes->where('type', 'sub2')->first()->name }}</p>
                                 </div>
                             </div>
                         </div>
