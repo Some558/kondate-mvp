@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Edit Monday\'s Menu') }}
+        <h2 class="font-semibold text-2xl text-gray-800 leading-tight">
+            献立編集
         </h2>
     </x-slot>
 
@@ -13,15 +13,15 @@
                         @csrf
                         @method('PUT')
                         <div class="mb-4">
-                            <label for="main_dish" class="block text-gray-700 text-sm font-bold mb-2">メインメニュー:</label>
+                            <label for="main_dish" class="block text-indigo-700 text-xl font-bold mb-4">メインメニュー:</label>
                             <input type="text" name="main_dish" id="main_dish" value="{{ $menu->dishes->where('type', 'main')->first()->name }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
                         </div>
                         <div class="mb-4">
-                            <label for="sub_dish1" class="block text-gray-700 text-sm font-bold mb-2">サイドメニュー 1:</label>
+                            <label for="sub_dish1" class="block text-indigo-700 text-xl font-bold mb-4">サイドメニュー 1:</label>
                             <input type="text" name="sub_dish1" id="sub_dish1" value="{{ $menu->dishes->where('type', 'sub1')->first()->name }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
                         </div>
                         <div class="mb-6">
-                            <label for="sub_dish2" class="block text-gray-700 text-sm font-bold mb-2">サイドメニュー 2:</label>
+                            <label for="sub_dish2" class="block text-indigo-700 text-xl font-bold mb-4">サイドメニュー 2:</label>
                             <input type="text" name="sub_dish2" id="sub_dish2" value="{{ $menu->dishes->where('type', 'sub2')->first()->name }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
                         </div>
                         <div class="flex items-center justify-between">
