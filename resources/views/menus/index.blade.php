@@ -5,6 +5,9 @@
         </h2>
     </x-slot>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.9.96/css/materialdesignicons.min.css" rel="stylesheet">
+
+
     <div class="py-12 bg-gray-100">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-lg sm:rounded-lg">
@@ -14,15 +17,24 @@
                             <h3 class="text-xl font-bold text-indigo-700 mb-6">月曜日の献立</h3>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div class="bg-indigo-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out hover:shadow-lg">
-                                    <h4 class="font-bold text-indigo-900 mb-3">メインメニュー</h4>
+                                    <div class="flex items-center mb-3">
+                                        <i class="mdi mdi-rice text-2xl text-indigo-600 mr-2"></i>
+                                        <h4 class="font-bold text-indigo-900">メインメニュー</h4>
+                                    </div>
                                     <p class="text-gray-800 text-lg">{{ $menu->dishes->where('type', 'main')->first()->name }}</p>
                                 </div>
                                 <div class="bg-indigo-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out hover:shadow-lg">
-                                    <h4 class="font-bold text-indigo-900 mb-3">サイドメニュー 1</h4>
+                                    <div class="flex items-center mb-3">
+                                        <i class="mdi mdi-food-variant text-2xl text-indigo-600 mr-2"></i>
+                                        <h4 class="font-bold text-indigo-900">サイドメニュー 1</h4>
+                                    </div>
                                     <p class="text-gray-800 text-lg">{{ $menu->dishes->where('type', 'sub1')->first()->name }}</p>
                                 </div>
                                 <div class="bg-indigo-50 p-6 rounded-lg shadow-md transition duration-300 ease-in-out hover:shadow-lg">
-                                    <h4 class="font-bold text-indigo-900 mb-3">サイドメニュー 2</h4>
+                                    <div class="flex items-center mb-3">
+                                        <i class="mdi mdi-food-apple text-2xl text-indigo-600 mr-2"></i>
+                                        <h4 class="font-bold text-indigo-900">サイドメニュー 2</h4>
+                                    </div>
                                     <p class="text-gray-800 text-lg">{{ $menu->dishes->where('type', 'sub2')->first()->name }}</p>
                                 </div>
                             </div>
